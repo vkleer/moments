@@ -1,10 +1,11 @@
-import React from 'react'
-import { Navbar, Container, Nav } from 'react-bootstrap'
-import logo from '../assets/logo.png'
+import React from 'react';
+import { Navbar, Container, Nav } from 'react-bootstrap';
+import logo from '../assets/logo.png';
+import styles from '../styles/NavBar.module.css';
 
 const NavBar = () => {
   return (
-    <Navbar expand="md" fixed="top">
+    <Navbar className={styles.NavBar} expand="md" fixed="top">
     <Container>
         <Navbar.Brand href="#home">
           <img src={logo} alt="logo" height="45" />
@@ -28,4 +29,4 @@ const NavBar = () => {
   )
 }
 
-export default NavBar
+export default NavBar;
