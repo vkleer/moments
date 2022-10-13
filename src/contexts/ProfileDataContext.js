@@ -6,7 +6,7 @@ export const ProfileDataContext = createContext();
 export const SetProfileDataContext = createContext();
 
 export const useProfileData = () => useContext(ProfileDataContext);
-export const useSetProfile = () => useContext(SetProfileDataContext);
+export const useSetProfileData = () => useContext(SetProfileDataContext);
 
 export const ProfileDataProvider = ({children}) => {
     const [profileData, setProfileData] = useState({
